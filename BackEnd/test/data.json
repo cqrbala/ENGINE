@@ -2,6 +2,7 @@
   "USERS": [
     {
       "UserID": "6bmxao8tyefycn5apcrgepda6",
+      "UserImg": "https://i.scdn.co/image/ab6775700000ee8561b23f02f4b9d4a02bd157ec",
       "Artists": [
         "KSI",
         "Bazzi",
@@ -34,43 +35,6 @@
         {
           "name": "Little Bit Of Fun (feat. Anne-Marie)",
           "img": "https://i.scdn.co/image/ab67616d0000b2735bf53a3450491d22baae4c1e"
-        }
-      ]
-    },
-    {
-      "UserID": "1isat56vpyaqri31aas0hr0gb",
-      "Artists": [
-        "Arctic Monkeys",
-        "The Weeknd",
-        "Jaden",
-        "Travis Scott",
-        "Coldplay",
-        "One Direction",
-        "The Local Train",
-        "Prateek Kuhad",
-        "Anuv Jain",
-        "Pritam"
-      ],
-      "Songs": [
-        {
-          "name": "Less Than Zero",
-          "img": "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d"
-        },
-        {
-          "name": "PUFFIN ON ZOOTIEZ",
-          "img": "https://i.scdn.co/image/ab67616d0000b27386badd635b69aea887862214"
-        },
-        {
-          "name": "Out of Time",
-          "img": "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d"
-        },
-        {
-          "name": "Take My Breath",
-          "img": "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d"
-        },
-        {
-          "name": "Cabin Fever",
-          "img": "https://i.scdn.co/image/ab67616d0000b273421325b3842bc2f4cf65f1d3"
         }
       ]
     }
