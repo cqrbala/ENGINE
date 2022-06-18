@@ -3,6 +3,7 @@
     {
       "UserID": "6bmxao8tyefycn5apcrgepda6",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee8561b23f02f4b9d4a02bd157ec",
+      "UserEmail": "arnav.mago@students.iiit.ac.in",
       "Artists": [
         "KSI",
         "Bazzi",
@@ -41,6 +42,7 @@
     {
       "UserID": "xrypr3x5gr7waohr4f5dugto9",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee859f20ffae8e87009ed10c6844",
+      "UserEmail": "srija.mukhopadhyay@research.iiit.ac.in",
       "Songs": [
         {
           "name": "Fourth of July",
@@ -79,6 +81,7 @@
     {
       "UserID": "3tm5l7bulexuq64gpjt58f7gh",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee8581eddee375aa34e4bca5b494",
+      "UserEmail": "arghya.roy@research.iiit.ac.in",
       "Songs": [
         {
           "name": "Climbing Up the Walls",
@@ -117,6 +120,7 @@
     {
       "UserID": "2zrt5mn3fw5ytk1gcj6jbzhwp",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee850584b5cd699ee85edd9a3b86",
+      "UserEmail": "druhan.shah@research.iiit.ac.in",
       "Artists": [
         "John Williams",
         "Heilung",
@@ -150,6 +154,7 @@
     {
       "UserID": "ehein2141lln4sdinap3rpf45",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee853874d233a2109b1dca52db3e",
+      "UserEmail": "haran.raajesh@students.iiit.ac.in",
       "Songs": [
         {
           "name": "Aaj Se Teri",
@@ -183,6 +188,7 @@
     {
       "UserID": "5sdhg30xvss932a10ysbrejep",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee85361e8c98e7a6fdd2a3ea6e84",
+      "UserEmail": "sreeram.vennam@students.iiit.ac.in",
       "Artists": ["XXXTENTACION", "The Midnight", "Kupla"],
       "Songs": [
         {
@@ -210,6 +216,7 @@
     {
       "UserID": "iaaeofn0yv1vk1foqrusj1sax",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee852ee1e560ee0d2bd1e76eb24e",
+      "UserEmail": "jhalak.banzal@students.iiit.ac.in",
       "Songs": [
         {
           "name": "Miracle only be the best",
@@ -248,6 +255,7 @@
     {
       "UserID": "1isat56vpyaqri31aas0hr0gb",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee85ca6603409ec9c854b2d842c8",
+      "UserEmail": "adyansh.kakran@research.iiit.ac.in",
       "Artists": [
         "Arctic Monkeys",
         "The Weeknd",
@@ -286,6 +294,7 @@
     {
       "UserID": "4mfdxui6ocjag30nbcrqgpgec",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee8561f491e5859c1705ea4436e1",
+      "UserEmail": "himanshu.sarraf@students.iiit.ac.in",
       "Artists": [
         "Sidhu Moose Wala",
         "NEFFEX",
@@ -318,6 +327,45 @@
         {
           "name": "Elevated",
           "img": "https://i.scdn.co/image/ab67616d0000b27326e1ab264bf28464a25fccd3"
+        }
+      ]
+    },
+    {
+      "UserID": "wqton69u2zlbliiowswiw6i5t",
+      "UserImg": "https://i.scdn.co/image/ab6775700000ee853b63b2e773b2939e4463744d",
+      "UserEmail": "arnav.negi@students.iiit.ac.in",
+      "Artists": [
+        "EXO",
+        "Justin Timberlake",
+        "DAY6",
+        "IU",
+        "Billie Eilish",
+        "Radiohead",
+        "Billy Joel",
+        "Solven",
+        "Elliott Smith",
+        "blackbear"
+      ],
+      "Songs": [
+        {
+          "name": "Cry Me a River",
+          "img": "https://i.scdn.co/image/ab67616d0000b273346a5742374ab4cf9ed32dee"
+        },
+        {
+          "name": "Mirrors",
+          "img": "https://i.scdn.co/image/ab67616d0000b273db1d1cdc927a07825a2ed244"
+        },
+        {
+          "name": "My Love (feat. T.I.)",
+          "img": "https://i.scdn.co/image/ab67616d0000b273c68f26a3d34fbd0faed2b473"
+        },
+        {
+          "name": "Hey There Delilah",
+          "img": "https://i.scdn.co/image/ab67616d0000b273beae6e69d6505fd379ef3081"
+        },
+        {
+          "name": "GANADARA (Feat. IU)",
+          "img": "https://i.scdn.co/image/ab67616d0000b2738c0defcb336a0296eb7d704a"
         }
       ]
     }
