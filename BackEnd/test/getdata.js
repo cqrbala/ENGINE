@@ -1,6 +1,6 @@
 const fs = require('fs')
 const SpotifyWebApi = require('spotify-web-api-node');
-const token = "BQCECtHH-Sn0mQHJRNAy082ugkZeu3G9vPxzEmtebhteNJV1cgB8CT_Wb5M-C5SsjRcYxHrfBPoaxH92RO1aua8_3vqnFCYY21DSktMcBkjsWUOSQ9e6kjisQ0IkoOibD35vcdUxXmoVo5pR4m37M81dYM3Ze_rh0furcZU-04z6eWClhcBZGc-IUXEeMq8jvTnqw2R_psEJqbxiQvYkZvbntJ_7g9dcr_LAUufvYkofPjU264uDXQdG_9Kq3CiNMMANWiDrrRWIrle3MwJzQ-vsmlVf7kFLNXeEFKjsx6aa7dwcOCX5AikNfNO3PabBYlsPTJueA6oYHXWgvzAmow";
+const token = "BQBSUR1tYm5MgvoEr1H9IH6ZJJ4BDRI05ZJx-u55YH_iPop_0O5CeO38TedmKuHwCptZr76FW7ua7FQSQAiMA2yRbyigm6StflGGbFIK7iyNi2o90yMC10tBgl0lbjeCTNIKBN97v-EaCny6cApbeflxOLBE7CPjl3x4e4lUdT9WH6WulvqKT0yW4W5HyrH2Whyetb_7YAPs4OPL4H0dWkTxFD0Pq2BSt3ZoZXThGGtP3CLO_25hQzwa0XqaNz5U_Lh4YgMS4DKkoAtk3tLsatSYow99PMXlkrsO7J3_80eBXwYJ2A7uyD6mDmNHUABRfW_dmYD_JVfx73aJHQ";
 
 const spotifyApi = new SpotifyWebApi();
 spotifyApi.setAccessToken(token);
@@ -12,6 +12,7 @@ function getMyData() {
   (async () => {
     const me = await spotifyApi.getMe();
     file.UserID = me.body.id;
+    
     file.UserImg = me.body.images[0].url;
     GetTop10Artists(me.body.id);
     MyTopTracks(me.body.id);
@@ -44,7 +45,14 @@ async function MyTopTracks(userName) {
 
     file.Songs = songs
     f.USERS.push(file)
+    await waitforme(2000)
     fs.writeFileSync("data.json",JSON.stringify(f))
+}
+
+function waitforme(milisec) {
+  return new Promise(resolve => {
+      setTimeout(() => { resolve('') }, milisec);
+  })
 }
 
 getMyData();

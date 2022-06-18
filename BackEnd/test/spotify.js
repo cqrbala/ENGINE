@@ -29,7 +29,7 @@ const scopes = [
 var spotifyApi = new SpotifyWebApi({
     clientId: 'cfc5a3cfcbf944158de7c5fffa03efb9',
     clientSecret: 'eca2b8cc92c2499b8c67b4b9f0df3be8',
-    redirectUri: 'http://localhost:8888/callback'
+    redirectUri: 'http://192.168.66.166:8888/callback'
   });
   
   const app = express();
@@ -84,6 +84,6 @@ var spotifyApi = new SpotifyWebApi({
   
   app.listen(8888, () =>
     console.log(
-      'HTTP Server up. Now go to http://localhost:8888/login in your browser.'
+      'HTTP Server up. Now go to http://192.168.66.166:8888/login in your browser.'
     )
   );
