@@ -12,7 +12,7 @@ function getMyData() {
   (async () => {
     const me = await spotifyApi.getMe();
     file.UserID = me.body.id;
-
+    file.name = me.body.name;
     file.UserImg = me.body.images[0].url;
     GetTop10Artists(me.body.id);
     MyTopTracks(me.body.id);
