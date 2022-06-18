@@ -1,0 +1,41 @@
+{
+  "USERS": [
+    {
+      "UserID": "6bmxao8tyefycn5apcrgepda6",
+      "Artists": [
+        "KSI",
+        "Bazzi",
+        "Pritam",
+        "Justin Bieber",
+        "blackbear",
+        "Anne-Marie",
+        "Juice WRLD",
+        "Lauv",
+        "JP Saxe",
+        "Imagine Dragons"
+      ],
+      "Songs": [
+        {
+          "name": "Numa Numa Yey",
+          "img": "https://i.scdn.co/image/ab67616d0000b2734aa29cb6da847dc4c9866da0"
+        },
+        {
+          "name": "parachute",
+          "img": "https://i.scdn.co/image/ab67616d0000b273ed692934b76efe622860f7bb"
+        },
+        {
+          "name": "1, 2, 3 (feat. Jason Derulo & De La Ghetto)",
+          "img": "https://i.scdn.co/image/ab67616d0000b273775d1e288c04237d896e8357"
+        },
+        {
+          "name": "Dinero",
+          "img": "https://i.scdn.co/image/ab67616d0000b27338c99f64fec0cfebda3bfb6f"
+        },
+        {
+          "name": "Little Bit Of Fun (feat. Anne-Marie)",
+          "img": "https://i.scdn.co/image/ab67616d0000b2735bf53a3450491d22baae4c1e"
+        }
+      ]
+    }
+  ]
+}
