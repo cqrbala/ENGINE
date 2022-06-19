@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/fontlibrary.css?17"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/glacial-indifference"
+      type="text/css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+      integrity="sha512-334uBDwY0iZ2TklV1OtDtBW9vp7jjP7SWRzT7Ehu1fdtPIjTpCwTSFb8HI/YBau9L1/kRBEOALrS229Kry4yFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="vanta.fog.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+
+  <body id="bbody">
+    <div>
+      <section>
+        <h1
+          style="font-size: 100px; text-shadow: -6px 8px rgba(255, 55, 0, 0.81)"
+        >
+          NEVER LEAVE YOUR ROOM?
+        </h1>
+        <h1
+          style="
+            font-size: 30px;
+            font-family: GlacialIndifferenceRegular;
+            font-weight: lighter;
+          "
+        >
+          Your lack of social skills will no longer stop you from making
+          friends.
+        </h1>
+
+        <br /><br /><br /><br /><br /><br /><br /><br />
+
+        <h1
+          style="
+            font-size: 30px;
+            font-family: GlacialIndifferenceRegular;
+            font-weight: lighter;
+          "
+        >
+          Enter your IIIT email to verify
+        </h1>
+        <br />
+        <form id="emailForm">
+          <textarea
+            id="newsarea"
+            name="news"
+            class="emailbox"
+            style="
+              font-size: 30px;
+              font-family: GlacialIndifferenceRegular;
+              font-weight: lighter;
+            "
+          ></textarea
+          ><br /><br />
+          <!-- <input type="submit" value="SUBMIT" class="btn-dynamic"> -->
+          <button
+            type="button"
+            style="
+              font-size: 30px;
+              font-family: GlacialIndifferenceRegular;
+              font-weight: lighter;
+            "
+            onclick="buttoncalled();"
+          >
+            VERIFY
+          </button>
+        </form>
+        <!-- <button style="font-size:30px; font-family:GlacialIndifferenceRegular; font-weight:lighter">VERIFY</button> -->
+      </section>
+    </div>
+
+    <script>
+      const buttoncalled = async () => {
+        // const myHeaders = new Headers();
+        // myHeaders.append('Content-Type', 'application/json');
+        // const data = await fetch("http://localhost:8888/data.json", {method: 'GET', header: myHeaders});
+        // console.log(data)
+
+        const res = await axios.get("http://localhost:8888/data.json");
+        console.log(res.data);
+        const file = res.data;
+        var x = document.getElementById("newsarea").value;
+        if (!(x === undefined) && !x.endsWith("iiit.ac.in")) {
+          alert("You are not a IIIT Student!");
+        } else {
+          let found = false;
+          let match = new Array();
+          for (let user of file.USERS) {
+            if (user.UserEmail == x) {
+              //console.log(user)
+              let email = user.UserEmail;
+              let match2 = new Array();
+              // console.log(email)
+              for (let User of file.USERS) {
+                if (User.UserEmail != email) {
+                  let comp = 0;
+                  let n = Math.min(User.Artists.length, user.Artists.length);
+                  // console.log(n)
+                  for (let i of User.Artists) {
+                    // console.log(i)
+                    for (let j of user.Artists) {
+                      //console.log(j)
+                      if (i == j) {
+                        comp++;
+                      }
+                    }
+                  }
+                  match2.push({ user: User, comp: (comp * 100) / n });
+                }
+              }
+              match2.sort(function (a, b) {
+                return a.comp - b.comp;
+              });
+              match2.reverse();
+              match = match2;
+              found = true;
+            }
+          }
+          if (!found) {
+            alert("NO");
+          } else {
+            localStorage.setItem("match1", JSON.stringify(match[0]));
+            localStorage.setItem("match2", JSON.stringify(match[1]));
+            localStorage.setItem("match3", JSON.stringify(match[2]));
+            localStorage.setItem("match4", JSON.stringify(match[3]));
+            window.location.href = "matches.html";
+          }
+        }
+      };
+    </script>
+
+    <script defer>
+      VANTA.FOG({
+        el: "#bbody",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        highlightColor: 0xde5117,
+        midtoneColor: 0xff0077,
+        lowlightColor: 0x5f0000,
+        baseColor: 0xffeeee,
+        blurFactor: 0.5,
+        speed: 0.8,
+        zoom: 1.2,
+      });
+    </script>
+  </body>
+</html>

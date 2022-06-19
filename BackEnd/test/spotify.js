@@ -1,5 +1,6 @@
 var SpotifyWebApi = require('spotify-web-api-node');
 const express = require('express')
+const cors = require('cors');
 //app.set('view engine', 'pug')
 //app.set('views', './views')
 
@@ -36,9 +37,15 @@ var spotifyApi = new SpotifyWebApi({
   
   const app = express();
   
+  app.use(cors());
   app.get('/login', (req, res) => {
     res.redirect(spotifyApi.createAuthorizeURL(scopes));
   });
+
+
+  app.get('/data.json', (req, res) => {
+    res.json(require("./data.json"))
+  } )
   
   app.get('/callback', (req, res) => {
     const error = req.query.error;
