@@ -1,6 +1,6 @@
 const fs = require('fs')
 const SpotifyWebApi = require('spotify-web-api-node');
-const token = "BQDeXZ1nW_ReTwohQp76cpdj2i2pbwyRRapCYN5I4s-gPe0JKkRANHs35s8g6eieCNk0uEoMxKoRnjF1Qz9n5fYNILmlbGwuAkqeQQ0bMTiMLci-Y5vqA9i1EPTlKkwIDhU6_BmVNhGCQeDM6rqrKlUSuoDnk-iLT4hRvpGpzJWyjEQu1YfMQQWphbocBg1ZbUp2EoDBWOQVgiA8yRtX-DgmmRqLEif7XxHqujZFGW-1B7Tafc8RDB9xS3ArCzRYPylYzs0X0JPV0z-gxnA8kXYFNAhpOyjxRalkpDeCbkLSXKPkot8Yl5I2ucENDMvhcEW1V0ZUa-1KTwy5gQ";
+const token = "BQDOKlLCcvYhGqtHm5MJ93LctA-O1qOdO0YsHr84P9CS0gR15a3C9n8gaM-uriHVHxiLbhggUq_TtRGWOvQPLAriLbFDlA7pouqfSY4mmkU7VDIYm9ytUdF5fPfdjEMjNYrO4Q5orGSacKn5ws9b0LMLeBEJL2X8bJRkWJFaZI64P8K9k490Lv3AONC6WH6e3oNC2o1bg1wh44Bsb6Eehz-tk5AQXg_uJYRsIwIee7p7wj71vhAV5toJdwldsM1Erj-bT7zmNg5W1ZOv_zAi-wPUE3WqA56Elm2kFsK8fwveVbRbGecBhunn4_ngN_r1f95UxtMKt3fhWWac4g";
 //app.set('view engine', 'pug')
 //app.set('views', './views')
 

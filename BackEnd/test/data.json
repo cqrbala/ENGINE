@@ -220,86 +220,6 @@
       ]
     },
     {
-      "UserID": "iaaeofn0yv1vk1foqrusj1sax",
-      "UserImg": "https://i.scdn.co/image/ab6775700000ee852ee1e560ee0d2bd1e76eb24e",
-      "UserEmail": "jhalak.banzal@students.iiit.ac.in",
-      "name": "Jhalak",
-      "Songs": [
-        {
-          "name": "Miracle only be the best",
-          "img": "https://i.scdn.co/image/ab67616d0000b273a0db9c87c4f1e710b001cb04"
-        },
-        {
-          "name": "Regression",
-          "img": "https://i.scdn.co/image/ab67616d0000b273ca222c281834416cfd86d7c8"
-        },
-        {
-          "name": "The Longest Wave",
-          "img": "https://i.scdn.co/image/ab67616d0000b27358406b3f1ac3ceaff7a64fef"
-        },
-        {
-          "name": "Lead Your Partner",
-          "img": "https://i.scdn.co/image/ab67616d0000b27378617e3e92d3c0c0bf10dd77"
-        },
-        {
-          "name": "Why'd You Only Call Me When You're High?",
-          "img": "https://i.scdn.co/image/ab67616d0000b2734ae1c4c5c45aabe565499163"
-        }
-      ],
-      "Artists": [
-        "Yu-Peng Chen",
-        "Lana Del Rey",
-        "Joji",
-        "HOYO-MiX",
-        "Grizzly Bear",
-        "The Marías",
-        "Arctic Monkeys",
-        "Red Hot Chili Peppers",
-        "Cage The Elephant",
-        "The Strokes"
-      ]
-    },
-    {
-      "UserID": "1isat56vpyaqri31aas0hr0gb",
-      "UserImg": "https://i.scdn.co/image/ab6775700000ee85ca6603409ec9c854b2d842c8",
-      "UserEmail": "adyansh.kakran@research.iiit.ac.in",
-      "name": "Adyansh",
-      "Artists": [
-        "Arctic Monkeys",
-        "The Weeknd",
-        "Jaden",
-        "Travis Scott",
-        "Coldplay",
-        "One Direction",
-        "The Local Train",
-        "Prateek Kuhad",
-        "Anuv Jain",
-        "Pritam"
-      ],
-      "Songs": [
-        {
-          "name": "Less Than Zero",
-          "img": "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d"
-        },
-        {
-          "name": "PUFFIN ON ZOOTIEZ",
-          "img": "https://i.scdn.co/image/ab67616d0000b27386badd635b69aea887862214"
-        },
-        {
-          "name": "Out of Time",
-          "img": "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d"
-        },
-        {
-          "name": "Take My Breath",
-          "img": "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d"
-        },
-        {
-          "name": "Cabin Fever",
-          "img": "https://i.scdn.co/image/ab67616d0000b273421325b3842bc2f4cf65f1d3"
-        }
-      ]
-    },
-    {
       "UserID": "4mfdxui6ocjag30nbcrqgpgec",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee8561f491e5859c1705ea4436e1",
       "UserEmail": "himanshu.sarraf@students.iiit.ac.in",
@@ -617,6 +537,84 @@
         "Shawn Mendes",
         "Clinton Kane",
         "Atif Aslam"
+      ]
+    },
+    {
+      "UserID": "b286nmef7n7idmkxftpvugmj7",
+      "UserImg": "https://i.scdn.co/image/ab6775700000ee85479d045b5f0036896bfa64e8",
+      "UserEmail": "nipun.tulsian@research.iiit.ac.in",
+      "name": "Nipun",
+      "Artists": [
+        "Sachet Tandon",
+        "Yo Yo Honey Singh",
+        "Pritam",
+        "Atif Aslam",
+        "Arijit Singh",
+        "Vishal Mishra",
+        "Tanishk Bagchi",
+        "AP Dhillon"
+      ],
+      "Songs": [
+        {
+          "name": "Brown Munde",
+          "img": "https://i.scdn.co/image/ab67616d0000b273d9a129c4a656a55afff2ca02"
+        },
+        {
+          "name": "Blue Eyes",
+          "img": "https://i.scdn.co/image/ab67616d0000b27346a4f62d210c2cb02158eac7"
+        },
+        {
+          "name": "Excuses",
+          "img": "https://i.scdn.co/image/ab67616d0000b2735b74e703d6ffb2ea16860c86"
+        },
+        {
+          "name": "Mehram (From \"Jersey\")",
+          "img": "https://i.scdn.co/image/ab67616d0000b273dae702d4ba242d370d5dc639"
+        },
+        {
+          "name": "Raataan Lambiyan",
+          "img": "https://i.scdn.co/image/ab67616d0000b273ab827cdec4b3fc1b02bfdb1e"
+        }
+      ]
+    },
+    {
+      "UserID": "iaaeofn0yv1vk1foqrusj1sax",
+      "UserImg": "https://i.scdn.co/image/ab6775700000ee852ee1e560ee0d2bd1e76eb24e",
+      "UserEmail": "jhalak.banzal@students.iiit.ac.in",
+      "name": "Jhalak",
+      "Artists": [
+        "Yu-Peng Chen",
+        "Lana Del Rey",
+        "Grizzly Bear",
+        "Joji",
+        "The Marías",
+        "Arctic Monkeys",
+        "HOYO-MiX",
+        "Red Hot Chili Peppers",
+        "Cage The Elephant",
+        "Radiohead"
+      ],
+      "Songs": [
+        {
+          "name": "Miracle only be the best",
+          "img": "https://i.scdn.co/image/ab67616d0000b273a0db9c87c4f1e710b001cb04"
+        },
+        {
+          "name": "Regression",
+          "img": "https://i.scdn.co/image/ab67616d0000b273ca222c281834416cfd86d7c8"
+        },
+        {
+          "name": "The Longest Wave",
+          "img": "https://i.scdn.co/image/ab67616d0000b27358406b3f1ac3ceaff7a64fef"
+        },
+        {
+          "name": "Lead Your Partner",
+          "img": "https://i.scdn.co/image/ab67616d0000b27378617e3e92d3c0c0bf10dd77"
+        },
+        {
+          "name": "Why'd You Only Call Me When You're High?",
+          "img": "https://i.scdn.co/image/ab67616d0000b2734ae1c4c5c45aabe565499163"
+        }
       ]
     }
   ]
