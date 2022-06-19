@@ -1,0 +1,166 @@
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "GlacialIndifferenceBold";
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+::selection {
+  background-color: rgb(253, 67, 51);
+}
+
+
+
+section {
+  padding-top: 200px;
+  background-color: rgba(0, 0, 0, 0.077);
+  width: 100%;
+  height: 100vh;
+  /* padding: 0 1rem; */
+  padding-left: 50px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section h1 {
+  color: #fff;
+  font-size: calc(4rem + 12vw);
+  mix-blend-mode: difference;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 0.5em 1.1em;
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+  background-color: rgba(176, 255, 160, 0.233);
+  color: #fff;
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+  border-radius: 2.5px;
+  user-select: none;
+  transition: ease-in-out 0.15s all;
+}
+
+button:hover {
+  background-color: rgba(237, 250, 227, 0.733);
+  color: #000;
+}
+
+button:active {
+  animation: click 0.15s ease-in-out;
+}
+
+
+
+.emailbox{
+    width: 700px;
+    height: 50px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.077);
+    color: white;
+    font: inherit;
+    font-size: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.parentmatch{
+    border: none;
+    width: 95%;
+    border-spacing: 50px;
+}
+
+#matchtable tr, td{
+    padding: 50px;
+}
+
+#matchtable td{
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.077);
+}
+
+#match1, #match3, #percent1, #percent3, #pfp2, #pfp4{
+    text-align: right;
+    float: right;
+}
+#match4, #match2, #percent4, #percent2, #pfp1, #pfp3{
+    text-align: left;
+    float: left;
+}
+
+#match1, #match2, #match3, #match4{
+    font-size: 100px;
+}
+
+#percent1, #percent2, #percent3, #percent4{
+    font-size: 50px;
+}
+
+#pfp1, #pfp2, #pfp3, #pfp4{
+    height:200px;
+    width: 200px;
+    border-radius: 200px;
+}
+
+
+
+
+
+
+.songs-wrapper {
+    direction: inherit;
+    box-sizing: border-box!important;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+
+
+#songimg1, #songimg2, #songimg3, #songimg4{
+    height: 100px;
+    width: 100px;
+}
+#song1, #song2, #song3, #song4{
+    font-size: 60px;
+}
+
+
+
+
+
+
+
+@keyframes click {
+  0%,
+  50%,
+  100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+}
