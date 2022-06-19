@@ -382,6 +382,8 @@
     {
       "UserID": "31wybefq5qcvkapfpud5vch27zsq",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee85eac643cf176697b82a705d7d",
+      "UserEmail": "ishwar.balappanawar@students.iiit.ac.in",
+      "name": "Ishwar",
       "Artists": [
         "Pritam",
         "Darshan Raval",
@@ -420,6 +422,8 @@
     {
       "UserID": "kdmkcvo1wejydyp99ydbqjz6b",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee85720145f78e9f4bb3ad9c2d9f",
+      "UserEmail": "rohan.girish@students.iiit.ac.in",
+      "name": "Rohan",
       "Artists": [
         "Lil Nas X",
         "Queen",
@@ -458,6 +462,8 @@
     {
       "UserID": "a3bn3estmjpknerl60nxmod62",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee8528be2afdbe756e51d762f90b",
+      "UserEmail": "yash.bhaskar@students.iiit.ac.in",
+      "name": "Yash",
       "Songs": [
         {
           "name": "Una Mattina",
@@ -496,6 +502,8 @@
     {
       "UserID": "x3a1z7rg9gr6tnftu25fpq1hk",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee851cab29ae608b6f79527bf02b",
+      "UserEmail": "aneesh.chavan@research.iiit.ac.in",
+      "name": "Aneesh",
       "Songs": [
         {
           "name": "Lightbringer",
@@ -529,6 +537,86 @@
         "khai dreams",
         "Bad Bunny",
         "Aminé"
+      ]
+    },
+    {
+      "UserID": "2yh9do8g0vwivwdhh5vyb5xyd",
+      "UserImg": "https://i.scdn.co/image/ab6775700000ee85db19ca8a9decc80d97dcf62b",
+      "UserEmail": "aayush.acharya@students.iiit.ac.in",
+      "name": "Aayush",
+      "Artists": [
+        "KSI",
+        "Ariana Grande",
+        "Dua Lipa",
+        "Muse",
+        "Lauv",
+        "Backstreet Boys",
+        "The Weeknd",
+        "Black Sabbath",
+        "S-X",
+        "Led Zeppelin"
+      ],
+      "Songs": [
+        {
+          "name": "Die For You",
+          "img": "https://i.scdn.co/image/ab67616d0000b27308074b6de9b696b218c4b57a"
+        },
+        {
+          "name": "STAY (with Justin Bieber)",
+          "img": "https://i.scdn.co/image/ab67616d0000b27341e31d6ea1d493dd77933ee5"
+        },
+        {
+          "name": "abcdefu",
+          "img": "https://i.scdn.co/image/ab67616d0000b2732842f743ebd32235bceb43d3"
+        },
+        {
+          "name": "Marz",
+          "img": "https://i.scdn.co/image/ab67616d0000b27305458945174ebe0644a7dd7e"
+        },
+        {
+          "name": "Levitating (feat. DaBaby)",
+          "img": "https://i.scdn.co/image/ab67616d0000b273d4daf28d55fe4197ede848be"
+        }
+      ]
+    },
+    {
+      "UserID": "nuesmbwcj8ftwuzvy72n7um2t",
+      "UserImg": "https://i.scdn.co/image/ab6775700000ee85e3ea0facd0f942451641d6d8",
+      "UserEmail": "roja.sahoo@research.iiit.ac.in",
+      "name": "Roja",
+      "Songs": [
+        {
+          "name": "Bad Day",
+          "img": "https://i.scdn.co/image/ab67616d0000b273eaeb36403b9acd9001b6f827"
+        },
+        {
+          "name": "Big Energy",
+          "img": "https://i.scdn.co/image/ab67616d0000b2739c6ee9288ba1e9a08ab0b99e"
+        },
+        {
+          "name": "We Don't Talk About Bruno",
+          "img": "https://i.scdn.co/image/ab67616d0000b273e1ac646ed6f25125e2a77229"
+        },
+        {
+          "name": "Attention",
+          "img": "https://i.scdn.co/image/ab67616d0000b273897f73256b9128a9d70eaf66"
+        },
+        {
+          "name": "Modern Loneliness",
+          "img": "https://i.scdn.co/image/ab67616d0000b27336b12a4082f11d16a519b964"
+        }
+      ],
+      "Artists": [
+        "Jeremy Zucker",
+        "Why Don't We",
+        "Charlie Puth",
+        "Chelsea Cutler",
+        "A.R. Rahman",
+        "Labrinth",
+        "Pritam",
+        "Shawn Mendes",
+        "Clinton Kane",
+        "Atif Aslam"
       ]
     }
   ]

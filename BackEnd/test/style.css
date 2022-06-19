@@ -147,13 +147,13 @@ button:active {
     border-radius: 10px;
 }
 
-#songimg1, #songimg2, #songimg3, #songimg4{
+#songimg1, #songimg2, #songimg3, #songimg4, #songimg5{
     height: 100px;
     width: 100px;
     float: left;
     border-radius: 10px;
 }
-#song1, #song2, #song3, #song4{
+#song1, #song2, #song3, #song4, #song5{
     font-size: 50px;
     float: right;
     padding: 20px;
