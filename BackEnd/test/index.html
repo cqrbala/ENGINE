@@ -4,7 +4,6 @@
         <link rel="stylesheet" type="text/css" href="/assets/css/fontlibrary.css?17">
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/glacial-indifference" type="text/css">        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" integrity="sha512-334uBDwY0iZ2TklV1OtDtBW9vp7jjP7SWRzT7Ehu1fdtPIjTpCwTSFb8HI/YBau9L1/kRBEOALrS229Kry4yFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="vanta.fog.min.js"></script>
-        <script defer type="text/javascript" src="compare.js"></script>
 
     </head>
 
@@ -415,6 +414,9 @@
 }
             
             function buttoncalled () {
+                for (let user of file.USERS) {
+                    console.log(user.name)
+                }
                 var x = document.getElementById("newsarea").value;
                 if(!(x === undefined) && !(x.endsWith("iiit.ac.in"))){
                     alert("You are not a IIIT Student!")
