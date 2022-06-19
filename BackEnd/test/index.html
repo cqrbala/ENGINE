@@ -23,14 +23,14 @@
               <form id="emailForm">
                     <textarea id="newsarea" name="news" class="emailbox" style="font-size:30px; font-family:GlacialIndifferenceRegular; font-weight:lighter"></textarea><br><br>
                     <!-- <input type="submit" value="SUBMIT" class="btn-dynamic"> -->
-                    <button style="font-size:30px; font-family:GlacialIndifferenceRegular; font-weight:lighter" onclick="buttoncalled();console.log('hello'); return false;">VERIFY</button>
+                    <button type="button" style="font-size:30px; font-family:GlacialIndifferenceRegular; font-weight:lighter" onclick="buttoncalled();">VERIFY</button>
             
               </form>
               <!-- <button style="font-size:30px; font-family:GlacialIndifferenceRegular; font-weight:lighter">VERIFY</button> -->
             </section>
         </div>
 
-        <script defer>
+        <script>
             file = {"USERS": [
     {
       "UserID": "6bmxao8tyefycn5apcrgepda6",
@@ -295,7 +295,7 @@
       "UserID": "1isat56vpyaqri31aas0hr0gb",
       "UserImg": "https://i.scdn.co/image/ab6775700000ee85ca6603409ec9c854b2d842c8",
       "UserEmail": "adyansh.kakran@research.iiit.ac.in",
-      "name": "",
+      "name": "Adyansh",
       "Artists": [
         "Arctic Monkeys",
         "The Weeknd",
@@ -414,79 +414,53 @@
   ]
 }
             
-            function compareUsers(user1, user2){
-                let comp = 0;
-                let n = Math.min(user1.Artists.length,user2.Artists.length);
-                for(let i of user1.Artists){
-                    if(i in user2.Artists){
-                        comp++
-                    }
-                }
-                return comp*100/n
-            }
-
-            function getMatches(user){
-                let email = user.UserEmail
-                let match = new Array()
-                for(let User of file.USERS){
-                    if(User.UserEmail != email){
-                        comp = compareUsers(User,user)
-                        match.push({"user":User,"comp":comp})
-                    }
-                }
-                match.sort(function(a,b){
-                    return a.comp - b.comp
-                }); match.reverse()
-                return [ match[0], match[1], match[2], match[3] ]
-            }
-
-
             function buttoncalled () {
                 var x = document.getElementById("newsarea").value;
-            console.log(x)
-            if(!(x === undefined) && !(x.endsWith("iiit.ac.in"))){
-                alert("You are not a IIIT Student!")
-            } else {
-                // var request = new XMLHttpRequest();
-                // request.open("GET", "../BackEnd/test/data.json", false);
-                // request.send()
-                // var file = JS    ON.parse(request.responseText).USERS;
-                let found = false;
-                for (let user of file.USERS) {
-                    console.log(user.UserEmail)
-                    console.log(x)
-                    if(user.UserEmail == x){
-                        let matches = getMatches(user)
-                        found = true;
+                if(!(x === undefined) && !(x.endsWith("iiit.ac.in"))){
+                    alert("You are not a IIIT Student!")
+                } else {
+                    let found = false;
+                    let match = new Array()
+                    for (let user of file.USERS) {
+                        if(user.UserEmail == x){
+                            console.log(user)
+                            let email = user.UserEmail
+                            let match2 = new Array()
+                            // console.log(email)
+                            for(let User of file.USERS){
+                                if(User.UserEmail != email){
+                                    let comp = 0;
+                                    let n = Math.min(User.Artists.length,user.Artists.length)
+                                    // console.log(n)
+                                    for(let i of User.Artists){
+                                        // console.log(i)
+                                        for(let j of user.Artists){
+                                            //console.log(j)
+                                            if(i == j){
+                                                comp++
+                                            }
+                                        }
+                                    }
+                                    match2.push({"user":User,"comp":(comp*100)/n})
+                                }
+                            }
+                            match2.sort(function(a,b){
+                                return a.comp - b.comp
+                            }); match2.reverse()
+                            match = match2
+                            found = true;
+                        }
+                    }
+                    if(!found){
+                        alert("NO")
+                    }else{
+                        localStorage.setItem('match1',JSON.stringify(match[0]))
+                        localStorage.setItem('match2',JSON.stringify(match[1]))
+                        localStorage.setItem('match3',JSON.stringify(match[2]))
+                        localStorage.setItem('match4',JSON.stringify(match[3]))
+                        window.location.href = "matches.html"
                     }
                 }
-                if(!found){
-                    alert("NO")
-                }else{
-                    var y = confirm("YES")
-                    console.log(y)
-                    if(y == true){
-                        window.location.href = "https://www.google.com"
-
-                    }
-                    //window.location.href = "https://www.google.com"
-                    document.getElementById("pfp1").src=match[0].user.UserImg;
-                    document.getElementById("match1").innerHTML = match[0].user.name
-                    document.getElementById("percent1").innerHTML = match[0].comp
-  
-                    document.getElementById("pfp2").src=match[1].user.UserImg;
-                    document.getElementById("match2").innerHTML = match[1].user.name
-                    document.getElementById("percent2").innerHTML = match[1].comp
- 
-                    document.getElementById("pfp3").src=match[2].user.UserImg;
-                    document.getElementById("match3").innerHTML = match[2].user.name
-                    document.getElementById("percent3").innerHTML = match[2].comp
- 
-                    document.getElementById("pfp4").src=match[3].user.UserImg;
-                    document.getElementById("match4").innerHTML = match[3].user.name
-                    document.getElementById("percent4").innerHTML = match[3].comp
-               }
-           }
             }
        </script>
 

@@ -6,6 +6,30 @@
         <script src="vanta.fog.min.js"></script>
     </head>
 
+    <script defer>
+        window.onload = () => {
+            m1 = JSON.parse(localStorage.getItem('match1'))
+            m2 = JSON.parse(localStorage.getItem('match2'))
+            m3 = JSON.parse(localStorage.getItem('match3'))
+            m4 = JSON.parse(localStorage.getItem('match4'))
+            document.getElementById("match1").innerHTML = m1.user.name
+            document.getElementById("percent1").innerHTML = m1.comp+"%"
+            document.getElementById("pfp1").src=m1.user.UserImg;
+            
+            document.getElementById("pfp2").src=m2.user.UserImg;
+            document.getElementById("match2").innerHTML = m2.user.name
+            document.getElementById("percent2").innerHTML = m2.comp+"%"
+            
+            document.getElementById("pfp3").src=m3.user.UserImg;
+            document.getElementById("match3").innerHTML = m3.user.name
+            document.getElementById("percent3").innerHTML = m3.comp+"%"
+            
+            document.getElementById("pfp4").src=m4.user.UserImg;
+            document.getElementById("match4").innerHTML = m4.user.name
+            document.getElementById("percent4").innerHTML = m4.comp+"%"
+        }
+    </script>
+
     <body id="bbody">
 
         <div>
@@ -19,13 +43,13 @@
                 <tr>
                     <td>
                         <img id="pfp1" src="https://i.scdn.co/image/ab6775700000ee8561b23f02f4b9d4a02bd157ec">
-                        <h1 id="match1" style="font-family:GlacialIndifferenceBold; font-weight:lighter;text-shadow: -3.5px 4px rgba(255, 55, 0, 0.342);">HARAN RAAJESH</h1><br><br><br><br><br><br><br>
-                        <h1 id="percent1" style="font-family:GlacialIndifferenceRegular; font-weight:lighter">69% match</h1>
+                        <h1 id="match1" style="font-family:GlacialIndifferenceBold; font-weight:lighter;text-shadow: -3.5px 4px rgba(255, 55, 0, 0.342);"></h1><br><br><br><br><br><br><br>
+                        <h1 id="percent1" style="font-family:GlacialIndifferenceRegular; font-weight:lighter"></h1>
                     </td>
                     <td>
                         <img id="pfp2" src="https://i.scdn.co/image/ab6775700000ee8561b23f02f4b9d4a02bd157ec">
-                        <h1 id="match2" style="font-family:GlacialIndifferenceBold; font-weight:lighter;text-shadow: -3.5px 4px rgba(255, 55, 0, 0.342);">VENNM</h1><br><br><br><br><br><br><br>
-                        <h1 id="percent2" style="font-family:GlacialIndifferenceRegular; font-weight:lighter">69% match</h1>
+                        <h1 id="match2" style="font-family:GlacialIndifferenceBold; font-weight:lighter;text-shadow: -3.5px 4px rgba(255, 55, 0, 0.342);"></h1><br><br><br><br><br><br><br>
+                        <h1 id="percent2" style="font-family:GlacialIndifferenceRegular; font-weight:lighter"></h1>
 
                     </td>
                 </tr>
@@ -34,15 +58,15 @@
                     <td>
                         <img id="pfp3" src="https://i.scdn.co/image/ab6775700000ee8561b23f02f4b9d4a02bd157ec">
 
-                        <h1 id="match3" style="font-family:GlacialIndifferenceBold; font-weight:lighter;text-shadow: -3.5px 4px rgba(255, 55, 0, 0.342);">VENNM</h1><br><br><br><br><br><br><br>
-                        <h1 id="percent3" style="font-family:GlacialIndifferenceRegular; font-weight:lighter">69% match</h1>
+                        <h1 id="match3" style="font-family:GlacialIndifferenceBold; font-weight:lighter;text-shadow: -3.5px 4px rgba(255, 55, 0, 0.342);"></h1><br><br><br><br><br><br><br>
+                        <h1 id="percent3" style="font-family:GlacialIndifferenceRegular; font-weight:lighter"></h1>
 
                     </td>
                     <td>
                         <img id="pfp4" src="https://i.scdn.co/image/ab6775700000ee8561b23f02f4b9d4a02bd157ec">
 
-                        <h1 id="match4" style="font-family:GlacialIndifferenceBold; font-weight:lighter;text-shadow: -3.5px 4px rgba(255, 55, 0, 0.342);">HARAN RAAJESH</h1><br><br><br><br><br><br><br>
-                        <h1 id="percent4" style="font-family:GlacialIndifferenceRegular; font-weight:lighter">69% match</h1>
+                        <h1 id="match4" style="font-family:GlacialIndifferenceBold; font-weight:lighter;text-shadow: -3.5px 4px rgba(255, 55, 0, 0.342);"></h1><br><br><br><br><br><br><br>
+                        <h1 id="percent4" style="font-family:GlacialIndifferenceRegular; font-weight:lighter"></h1>
 
                     </td>
                 </tr>
