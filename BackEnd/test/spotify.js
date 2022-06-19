@@ -1,5 +1,7 @@
 var SpotifyWebApi = require('spotify-web-api-node');
 const express = require('express')
+//app.set('view engine', 'pug')
+//app.set('views', './views')
 
 // This file is copied from: https://github.com/thelinmichael/spotify-web-api-node/blob/master/examples/tutorial/00-get-access-token.js
 

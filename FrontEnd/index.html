@@ -11,7 +11,7 @@
         <div>
             <section>
 
-                <h1 style="font-size:100px">NEVER LEAVE YOUR ROOM?</h1>
+                <h1 style="font-size:100px;  text-shadow: -6px 8px rgba(255, 55, 0, 0.81);">NEVER LEAVE YOUR ROOM?</h1>
               <h1 style="font-size:30px; font-family:GlacialIndifferenceRegular; font-weight:lighter">Your lack of social skills will no longer stop you from making friends.</h1>
               
               <br><br><br><br><br><br><br><br>
@@ -19,7 +19,7 @@
               <h1 style="font-size:30px; font-family:GlacialIndifferenceRegular; font-weight:lighter">Enter your IIIT email to verify</h1>
               <br>
               <form id="emailForm">
-                    <textarea id="newsarea" name="news" class="emailbox" style="font-size:30px; font-family:GlacialIndifferenceRegular; font-weight:lighter"></textarea><br><br>
+                    <textarea id="newsarea" name="news" class="emailbox" style="font-size:30px; font-family:GlacialIndifferenceRegular; font-weight:lighter">.iiit.ac.in</textarea><br><br>
                     <!-- <input type="submit" value="SUBMIT" class="btn-dynamic"> -->
                     <button style="font-size:30px; font-family:GlacialIndifferenceRegular; font-weight:lighter">VERIFY</button>
             
@@ -27,6 +27,48 @@
               <!-- <button style="font-size:30px; font-family:GlacialIndifferenceRegular; font-weight:lighter">VERIFY</button> -->
             </section>
         </div>
+
+        <script defer>
+            
+            var x = document.getElementById("newsarea").value;
+            console.log(x)
+            if(!(x.endsWith("iiit.ac.in"))){
+                alert("You are not a IIIT Student!")
+            } else {
+                var request = new XMLHttpRequest();
+                request.open("GET", "../BackEnd/test/data.json", false);
+                request.send()
+                var file = JSON.parse(request.responseText).USERS;
+                let found = false;
+                for (let user in file) {
+                    if(user.UserEmail == x){
+                        let matches = getMatches(user)
+                        found = true;
+                    }
+                }
+                if(!found){
+                    alert("NO")
+                }else{
+                    window.location.replace("file:///home/arnavmago/Desktop/Hackathon/FrontEnd/matches.html")
+                    document.getElementById("pfp1").src=match[0].user.UserImg;
+                    document.getElementById("match1").innerHTML = match[0].user.name
+                    document.getElementById("percent1").innerHTML = match[0].comp
+  
+                    document.getElementById("pfp2").src=match[1].user.UserImg;
+                    document.getElementById("match2").innerHTML = match[1].user.name
+                    document.getElementById("percent2").innerHTML = match[1].comp
+ 
+                    document.getElementById("pfp3").src=match[2].user.UserImg;
+                    document.getElementById("match3").innerHTML = match[2].user.name
+                    document.getElementById("percent3").innerHTML = match[2].comp
+ 
+                    document.getElementById("pfp4").src=match[3].user.UserImg;
+                    document.getElementById("match4").innerHTML = match[3].user.name
+                    document.getElementById("percent4").innerHTML = match[3].comp
+               }
+           }
+       </script>
+
 
  
 

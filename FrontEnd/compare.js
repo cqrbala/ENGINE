@@ -1,4 +1,5 @@
-var file = JSON.parse(data)
+import configdata from './BackEnd/test/data.json'
+var file = JSON.parse(JSON.stringify(configdata))
 
 function compareUsers(user1, user2){
     let comp = 0;
@@ -17,9 +18,11 @@ function getMatches(user){
     for(let User of file.USERS){
         if(User.UserEmail != email){
             comp = compareUsers(User,user)
-            match.push(comp)
+            match.push({"user":User,"comp":comp})
         }
     }
-    match.sort(); Math.reverse()
+    match.sort(function(a,b){
+        return a.comp - b.comp
+    }); match.reverse()
     return [ match[0], match[1], match[2], match[3] ]
 }
