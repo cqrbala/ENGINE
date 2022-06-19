@@ -10,7 +10,7 @@
 
         
 
-        <h1 style="font-size:100px; padding: 30px 100px; text-shadow: -6px 8px rgba(255, 55, 0, 0.81);">HARAN RAAJESH</h1>
+        <h1 id="head" style="font-size:100px; padding: 30px 100px; text-shadow: -6px 8px rgba(255, 55, 0, 0.81);"></h1>
     
         <div class="songs-wrapper" style="width: 50%; float:left;">
 
@@ -18,7 +18,7 @@
                     <tr>
                         <td>
                             <img id="songimg1" src="https://i.scdn.co/image/ab6775700000ee8561b23f02f4b9d4a02bd157ec">
-                            <h1 id="song1" style="font-family:GlacialIndifferenceRegular; font-weight:lighter">ABC DEF</h1>
+                            <h1 id="song1" style="font-family:GlacialIndifferenceRegular; font-weight:lighter"></h1>
                         
                         </td>
                     </tr>
@@ -26,7 +26,7 @@
                     <tr>
                         <td>
                             <img id="songimg2" src="https://i.scdn.co/image/ab6775700000ee8561b23f02f4b9d4a02bd157ec">
-                            <h1 id="song2" style="font-family:GlacialIndifferenceRegular; font-weight:lighter">ABC DEF</h1>
+                            <h1 id="song2" style="font-family:GlacialIndifferenceRegular; font-weight:lighter"></h1>
                         
                         </td>
                     </tr>
@@ -34,7 +34,7 @@
                     <tr>
                         <td>
                             <img id="songimg3" src="https://i.scdn.co/image/ab6775700000ee8561b23f02f4b9d4a02bd157ec">
-                            <h1 id="song3" style="font-family:GlacialIndifferenceRegular; font-weight:lighter">ABC DEF</h1>
+                            <h1 id="song3" style="font-family:GlacialIndifferenceRegular; font-weight:lighter"></h1>
                         
                         </td>
                     </tr>
@@ -42,14 +42,14 @@
                     <tr>
                         <td>
                             <img id="songimg4" src="https://i.scdn.co/image/ab6775700000ee8561b23f02f4b9d4a02bd157ec">
-                            <h1 id="song4" style="font-family:GlacialIndifferenceRegular; font-weight:lighter">ABC DEF</h1>
+                            <h1 id="song4" style="font-family:GlacialIndifferenceRegular; font-weight:lighter"></h1>
                         
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img id="songimg4" src="https://i.scdn.co/image/ab6775700000ee8561b23f02f4b9d4a02bd157ec">
-                            <h1 id="song4" style="font-family:GlacialIndifferenceRegular; font-weight:lighter">ABC DEF</h1>
+                            <img id="songimg5" src="https://i.scdn.co/image/ab6775700000ee8561b23f02f4b9d4a02bd157ec">
+                            <h1 id="song5" style="font-family:GlacialIndifferenceRegular; font-weight:lighter"></h1>
                         
                         </td>
                     </tr>
@@ -86,7 +86,15 @@
         
         </div>
 
- 
+        <script>
+            var user = JSON.parse(localStorage.getItem('display'))
+
+            document.getElementById("head").innerHTML = user.user.name
+            for(let i = 0; i < 5; i++){
+                document.getElementById("songimg"+(i+1)).src = user.user.Songs[i].img
+                document.getElementById("song"+(i+1)).innerHTML = user.user.Songs[i].name
+            }
+        </script>
 
         <script defer>
         VANTA.FOG({
