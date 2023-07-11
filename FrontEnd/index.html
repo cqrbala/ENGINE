@@ -87,7 +87,7 @@
       </section>
     </div>
 
-    <script>
+<!--     <script>
       const buttoncalled = async () => {
         // const myHeaders = new Headers();
         // myHeaders.append('Content-Type', 'application/json');
@@ -144,6 +144,54 @@
             window.location.href = "matches.html";
           }
         }
+      };
+    </script> -->
+    <script>
+      const buttoncalled = async () => {
+        try {
+          const res = await axios.get("http://localhost:8888/data.json");
+          const data = res.data;
+    
+          const emailInput = document.getElementById("newsarea").value;
+          if (!emailInput || !emailInput.endsWith("iiit.ac.in")) {
+            alert("You are not a IIIT Student!");
+            return;
+          }
+    
+          const currentUser = data.USERS.find((user) => user.UserEmail === emailInput);
+          if (!currentUser) {
+            alert("User not found!");
+            return;
+          }
+    
+          const matches = findMatches(currentUser, data.USERS);
+          if (matches.length === 0) {
+            alert("No matches found!");
+            return;
+          }
+    
+          storeMatches(matches.slice(0, 4));
+          window.location.href = "matches.html";
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      };
+    
+      const findMatches = (currentUser, users) => {
+        return users
+          .filter((user) => user.UserEmail !== currentUser.UserEmail)
+          .map((user) => {
+            const commonArtists = user.Artists.filter((artist) => currentUser.Artists.includes(artist));
+            const compatibility = (commonArtists.length * 100) / Math.min(user.Artists.length, currentUser.Artists.length);
+            return { user, comp: compatibility };
+          })
+          .sort((a, b) => b.comp - a.comp);
+      };
+    
+      const storeMatches = (matches) => {
+        matches.forEach((match, index) => {
+          localStorage.setItem(`match${index + 1}`, JSON.stringify(match));
+        });
       };
     </script>
 
